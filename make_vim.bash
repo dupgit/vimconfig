@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Creates some directories
 mkdir -p ~/.vim/autoload
 mkdir -p ~/.vim/bundle
 mkdir -p ~/.vim/colors
@@ -19,3 +20,10 @@ git clone https://github.com/vim-airline/vim-airline-themes
 git clone https://github.com/yegappan/mru.git
 git clone https://github.com/scrooloose/nerdtree.git
 git clone --depth=1 https://github.com/scrooloose/syntastic.git
+
+# put vimrc to the right place
+cp vimrc ~/.vimrc
+
+
+
+# http://extensions.libreoffice.org/extension-center/dictionnaires-francais/releases/5.3/lo-oo-ressources-linguistiques-fr-v5-3.oxt
