@@ -8,6 +8,7 @@ Simple script to generate my vim configuration.
  * vim-sensible
  * vim-endwise
  * vim-surround
+ * vim-repeat
  * vim-airline and vim-airline-themes
  * mru.git
  * nerdtree.git

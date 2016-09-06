@@ -26,6 +26,7 @@ git clone git://github.com/tpope/vim-fugitive.git
 git clone git://github.com/tpope/vim-sensible.git
 git clone git://github.com/tpope/vim-endwise.git
 git clone git://github.com/tpope/vim-surround.git
+git clone git://github.com/tpope/vim-repeat.git
 git clone https://github.com/bling/vim-airline
 git clone https://github.com/vim-airline/vim-airline-themes
 git clone https://github.com/yegappan/mru.git
