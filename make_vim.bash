@@ -12,7 +12,7 @@ mkdir -p ~/.vim/spell
 # Install pathogen first.
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
-# Then install dictionnaries
+# Then install dictionaries
 cd ~/.vim/spell
 wget http://ftp.vim.org/vim/runtime/spell/fr.latin1.spl
 wget http://ftp.vim.org/vim/runtime/spell/fr.latin1.sug
