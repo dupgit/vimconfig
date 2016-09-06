@@ -1,12 +1,23 @@
 #!/bin/bash
 
+# Put vimrc to the right place
+cp vimrc ~/.vimrc
+
 # Creates some directories
 mkdir -p ~/.vim/autoload
 mkdir -p ~/.vim/bundle
 mkdir -p ~/.vim/colors
+mkdir -p ~/.vim/spell
 
 # Install pathogen first.
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+# Then install dictionnaries
+cd ~/.vim/spell
+wget http://ftp.vim.org/vim/runtime/spell/fr.latin1.spl
+wget http://ftp.vim.org/vim/runtime/spell/fr.latin1.sug
+wget http://ftp.vim.org/vim/runtime/spell/fr.utf-8.spl
+wget http://ftp.vim.org/vim/runtime/spell/fr.utf-8.sug
 
 # Then install interesting plugins.
 cd ~/.vim/bundle
@@ -20,10 +31,3 @@ git clone https://github.com/vim-airline/vim-airline-themes
 git clone https://github.com/yegappan/mru.git
 git clone https://github.com/scrooloose/nerdtree.git
 git clone --depth=1 https://github.com/scrooloose/syntastic.git
-
-# put vimrc to the right place
-cp vimrc ~/.vimrc
-
-
-
-# http://extensions.libreoffice.org/extension-center/dictionnaires-francais/releases/5.3/lo-oo-ressources-linguistiques-fr-v5-3.oxt
