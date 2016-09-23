@@ -35,6 +35,15 @@ set ruler
 set undolevels=1000	
 set backspace=indent,eol,start	
 
+" Search ignoring case except if one letter in the search pattern is a capital
+set ignorecase
+set smartcase
+
+" Automatically kills trailing white spaces for *.[ch] files.
+autocmd BufWritePre *.[ch] :%s/\s\+$//e
+
+
+
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 colorscheme koehler
 let g:airline_theme='murmur'
