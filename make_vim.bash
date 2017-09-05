@@ -32,3 +32,8 @@ git clone https://github.com/vim-airline/vim-airline-themes
 git clone https://github.com/yegappan/mru.git
 git clone https://github.com/scrooloose/nerdtree.git
 git clone --depth=1 https://github.com/scrooloose/syntastic.git
+
+# Then install vim-polyglot package
+mkdir -p ~/.vim/pack/default/start
+cd ~/.vim/pack/default/start
+git clone https://github.com/sheerun/vim-polyglot
