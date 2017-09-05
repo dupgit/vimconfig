@@ -14,7 +14,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-set number	
+set number
 set linebreak	
 "set showbreak=+++ 	
 "set textwidth=100	
@@ -42,8 +42,9 @@ set smartcase
 " Automatically kills trailing white spaces for *.[ch] files.
 autocmd BufWritePre *.[ch] :%s/\s\+$//e
 
-
-
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 colorscheme koehler
+"colorscheme onedark
 let g:airline_theme='murmur'
+
+set switchbuf=usetab,newtab
