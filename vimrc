@@ -43,8 +43,10 @@ set smartcase
 autocmd BufWritePre *.[ch] :%s/\s\+$//e
 
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
-colorscheme koehler
-"colorscheme onedark
+"colorscheme koehler
+
 let g:airline_theme='murmur'
+let g:onedark_terminal_italics = 1
+colorscheme onedark
 
 set switchbuf=usetab,newtab
