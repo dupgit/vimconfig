@@ -10,7 +10,8 @@ Simple script to generate my vim configuration.
  * vim-surround
  * vim-repeat
  * vim-airline and vim-airline-themes
- * mru.git
- * nerdtree.git
- * syntastic.git
+ * mru
+ * nerdtree
+ * syntastic
+ * vim-polyglot
 * Installs my .vimrc file
