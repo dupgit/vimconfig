@@ -14,4 +14,5 @@ Simple script to generate my vim configuration.
  * nerdtree
  * syntastic
  * vim-polyglot
+* Installs onedark color theme
 * Installs my .vimrc file
