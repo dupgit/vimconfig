@@ -48,5 +48,5 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 let g:airline_theme='murmur'
 let g:onedark_terminal_italics = 1
 colorscheme onedark
-
+set t_ut=
 set switchbuf=usetab,newtab
