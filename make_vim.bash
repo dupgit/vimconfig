@@ -13,20 +13,19 @@ mkdir -p ~/.vim/spell
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 # Then install dictionaries
-cd ~/.vim/spell
-wget http://ftp.vim.org/vim/runtime/spell/fr.latin1.spl
-wget http://ftp.vim.org/vim/runtime/spell/fr.latin1.sug
-wget http://ftp.vim.org/vim/runtime/spell/fr.utf-8.spl
-wget http://ftp.vim.org/vim/runtime/spell/fr.utf-8.sug
+curl -LSso ~/.vim/spell/fr.latin1.spl http://ftp.vim.org/vim/runtime/spell/fr.latin1.spl
+curl -LSso ~/.vim/spell/fr.latin1.sug http://ftp.vim.org/vim/runtime/spell/fr.latin1.sug
+curl -LSso ~/.vim/spell/fr.utf-8.spl http://ftp.vim.org/vim/runtime/spell/fr.utf-8.spl
+curl -LSso ~/.vim/spell/fr.utf-8.sug http://ftp.vim.org/vim/runtime/spell/fr.utf-8.sug
 
 # Then install interesting plugins.
 cd ~/.vim/bundle
-git clone git://github.com/tpope/vim-commentary.git
-git clone git://github.com/tpope/vim-fugitive.git
-git clone git://github.com/tpope/vim-sensible.git
-git clone git://github.com/tpope/vim-endwise.git
-git clone git://github.com/tpope/vim-surround.git
-git clone git://github.com/tpope/vim-repeat.git
+git clone https://github.com/tpope/vim-commentary.git
+git clone https://github.com/tpope/vim-fugitive.git
+git clone https://github.com/tpope/vim-sensible.git
+git clone https://github.com/tpope/vim-endwise.git
+git clone https://github.com/tpope/vim-surround.git
+git clone https://github.com/tpope/vim-repeat.git
 git clone https://github.com/bling/vim-airline
 git clone https://github.com/vim-airline/vim-airline-themes
 git clone https://github.com/yegappan/mru.git
