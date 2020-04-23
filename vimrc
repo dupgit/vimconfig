@@ -16,7 +16,9 @@ let g:syntastic_check_on_wq = 0
 set number
 set linebreak
 "set showbreak=+++
-"set textwidth=100
+"set textwidth=80
+" If one wants to see a line a column 80
+"set colorcolumn=80
 
 " Syntax highlighting.
 syntax enable
@@ -54,11 +56,10 @@ set undolevels=1000
 " Backspace behavior
 set backspace=indent,eol,start
 
-
 " Automatically kills trailing white spaces for *.[ch] files.
 autocmd BufWritePre *.[ch] :%s/\s\+$//e
 
-" Automatically recognize that *.md files are of markdowm type.
+" Automatically recognize that *.md files are of markdown type.
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 let g:onedark_terminal_italics = 1
