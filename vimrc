@@ -13,6 +13,13 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" Remap leader to something more friendly with my keyboard
+let mapleader = ','
+
+" ,<space> clears search highlighting.
+nnoremap <leader><space> :noh<cr>
+
+
 set number
 set linebreak
 "set showbreak=+++
