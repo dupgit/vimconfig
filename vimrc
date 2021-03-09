@@ -25,7 +25,7 @@ syntax enable
 
 " Highlight search results
 set hlsearch
-" Shows macchs while typing search string
+" Shows matchs while typing search string
 set showmatch
 " Search ignoring case except if one letter
 " in the search pattern is a capital.
@@ -35,19 +35,14 @@ set smartcase
 " Uses automatic indentation does not interfere
 " with other indentation parameters.
 set autoindent
-"set cindent
-"set smartindent
 filetype plugin indent on
 
 " https://vim.fandom.com/wiki/Converting_tabs_to_spaces
 " Cause <Tab> and <BS> to insert and delete the correct
 " number of spaces (4).
-set softtabstop=4
-" Uses 4 spaces characters for automatic indentation
-set shiftwidth=4
-" Inserts shiftwidth characters (4) in front of a line.
-set smarttab
-" Use spaces instead of tabs
+set softtabstop=4 " Uses 4 spaces characters for automatic indentation
+set shiftwidth=4  " Inserts shiftwidth characters (4) in front of a line.
+set smarttab      " Use spaces instead of tabs
 set expandtab
 
 set ruler
@@ -58,6 +53,7 @@ set backspace=indent,eol,start
 
 " Automatically kills trailing white spaces for *.[ch] files.
 autocmd BufWritePre *.[ch] :%s/\s\+$//e
+autocmd BufWritePre *.md :%s/\s\+$//e
 
 " Automatically recognize that *.md files are of markdown type.
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
@@ -68,9 +64,10 @@ set t_ut=
 set switchbuf=usetab,newtab
 
 " Trailing white spaces in blue (CLI)
-" and red (GUI).
-highlight ws ctermbg=blue guibg=red
-match ws /\s\+$/
+" Thanks to Vincent Driessen https://nvie.com/posts/how-i-boosted-my-vim/
+set list
+set listchars=tab:>-,trail:∘,extends:#,nbsp:∘
+highlight SpecialKey ctermbg=blue ctermfg=white
 
 map <C-J> <C-]>
 map <C-N> <C-T>
